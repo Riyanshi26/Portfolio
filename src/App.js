@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FixedSection from './components/FixedSection';
+import ScrollingSection from './components/ScrollingSection';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.scrollingSectionRef = React.createRef();
+  }
+
+  handleFixedSectionScroll = (e) => {
+    // Forward the scroll event to the scrolling section
+    this.scrollingSectionRef.current.scrollTop += e.deltaY;
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <FixedSection onScroll={this.handleFixedSectionScroll} />
+        <ScrollingSection ref={this.scrollingSectionRef} />
+      </div>
+    );
+  }
 }
 
 export default App;
