@@ -1,20 +1,45 @@
-body{
-    background-color: black;
+
+.main-container {
+  display: flex;
+  width: 100%;
+  color: white;
 }
 
-.fixed-section {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden;
-  }
+.left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #141e27;
+  position: sticky;
+  top: 0;
+}
 
-  .scrolling-section {
-    width: 50%;
-    height: 100vh;
-    margin-left: 50%;
-    overflow-y: scroll;
-  }
+.right {
+  width: 50%;
+  background-color: #141e27;
+  overflow-y: auto;
+}
+
+.indicator {
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px 0;
+  background-color: #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
 
