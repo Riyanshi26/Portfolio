@@ -1,0 +1,56 @@
+{
+    "projects":[
+        {
+            "title": "CAMPUS DELIVERY SYSTEM",
+            "link": "https://campdelrasp.vercel.app/",
+            "code": "https://github.com/RASP-food-delivery",
+            "startDate": "Jan 2024",
+            "endDate": "Feb 2024",
+            "summary": "campus food delivery web application with microservices architecture using using MERN stack, featuring performance optimizations, and a chatbot for enhanced user experience.",
+            "description":[
+                "Developed a comprehensive full-stack food delivery service as a component of the Computer System Design course as a group project.",
+                " Deployed a microservice architecture along with optimizations like caching and load balancing, to enhance performance and scalability.",
+                "Integrated features including chatbot and recommendation system to enhance user experience."
+            ],
+            "techStack": ["Reactjs", "Nodejs", "Firebase", "MongoDB", "Docker", "Python", "Redis Cache"]
+        },
+        {
+            "title": "TIC-TAC-TOE: MULTI AGENT REINFORCEMENT LEARNING",
+            "link": "",
+            "code": "https://github.com/Riyanshi26/Tic-tac-toe-game",
+            "startDate": "Nov 2023",
+            "endDate": "Dec 2024",
+            "summary": "Tic Tac Toe game with adaptive gameplay using reinforcement learning algorithms, including Q-learning and MCTS.",
+            "description":[
+                "Implemented a Tic Tac Toe game with using Q-learning and MCTS algorithms for adaptive gameplay.",
+                "Developed an intuitive user interface for human-computer interaction."
+            ],
+            "techStack": ["Python", "RL", "Numpy", "Tkinter"]
+        },
+        {
+            "title": "QUERY CHATBOT",
+            "link": "",
+            "code": "https://github.com/Riyanshi26/Chatbot",
+            "startDate": "Nov 2023",
+            "endDate": "Dec 2024",
+            "summary": "interactive chatbot for real-time query resolution at IIT Bhilai, leveraging NLP with TensorFlow and NLTK for accurate user query interpretation.",
+            "description":[
+                "Developed an interactive chatbot tailored for addressing real-time queries pertaining to IIT Bhilai using Natural Language Processing to ensure accurate understanding and interpretation of user queries."
+            ],
+            "techStack": ["Python", "TensorFlow", "NLTK", "NumPy", "Keras", "Tkinter"]
+        },
+        {
+            "title": "DIABETIC RETINOPATHY DETECTION",
+            "link": "https://github.com/Riyanshi26/Diabetic-retinopathy-detection",
+            "code": "",
+            "startDate": "Nov 2023",
+            "endDate": "Dec 2024",
+            "summary": "machine learning model using CNNs to automate the detection and grading of diabetic retinopathy from retinal images.",
+            "description":[
+                "Implemented a Machine Learning algorithm to automate the detection and grading of diabetic retinopathy and diabetic macular edema using retinal fundus images.",
+                "Utilized Convolutional Neural Networks as the foundation of the proposed model and achieved successful results, demonstrating the potential for the model to assist in the early diagnosis and treatment of diabetic eye diseases."
+            ],
+            "techStack": ["Python", "TensorFlow", "CNN", "Keras"]
+        }
+    ]
+}

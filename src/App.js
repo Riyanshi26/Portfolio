@@ -5,15 +5,18 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 
-const sections = ['Education','Skills', 'Experience', 'Projects'];
+const sections = ['Education', 'Skills', 'Experience', 'Projects'];
+
 const sectionComponents = {
   Skills: Skills,
   Projects: Projects,
   Experience: Experience,
   Education: Education,
 };
+
 const App = () => {
   const [activeSection, setActiveSection] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleScroll = () => {
     const sectionOffsets = sections.map((_, index) => {
@@ -39,27 +42,19 @@ const App = () => {
   return (
     <div className="main-container">
       <div className="left">
-        <LeftSection />
-        {sections.map((section, index) => (
-          <div
-            key={index}
-            className={`indicator ${activeSection === index ? 'active' : ''}`}
-            onClick={() => {
-              const sectionElement = document.getElementById(`section-${index}`);
-              sectionElement.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            {section}
-          </div>
-        ))}
+        <LeftSection 
+          sections={sections}
+          activeSection={activeSection}
+          hoveredIndex={hoveredIndex}
+          setHoveredIndex={setHoveredIndex}
+        />  
       </div>
-      
+
       <div className="right">
-      {sections.map((section, index) => {
+        {sections.map((section, index) => {
           const SectionComponent = sectionComponents[section];
           return (
             <div key={index} id={`section-${index}`} className="section">
-              <h2>{index} {section}</h2>
               <SectionComponent />
             </div>
           );

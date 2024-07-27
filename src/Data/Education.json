@@ -1,0 +1,23 @@
+{
+    "education":[
+        {
+            "school":"Indian Institute of Technology (IIT), Bhilai",
+            "location":"Bhilai, India",
+            "degree":"BACHELOR OF TECHNOLOGY",
+            "field":"Computer Science and Engineering",
+            "startDate":"Nov 2020",
+            "graduationDate":"May 2024",
+            "cgpa": 8.57
+
+        },
+        {
+            "school":"India International School, Jaipur",
+            "location":"Jaipur, India",
+            "degree":"12th class CSBSE",
+            "field":"",
+            "startDate":"",
+            "graduationDate":"April 2020",
+            "percentage": 94.4
+        }				      	
+    ]
+}
