@@ -1,19 +1,16 @@
 import React from 'react';
 import data from "../Data/Experience.json";
+import { ExperienceCard } from './Cards';
 
 const Experience = () => {
+  function createCard(item) {
+    return (
+      <ExperienceCard data={item}/>
+    );
+  }
   return (
-    <div>
-      {data.experience.map((item) => {
-        return (
-          <div className="experience">
-            <h3>{item.company}</h3>
-            <h4>{item.designation}</h4>
-            <h5>{item.start}</h5>
-            <p>{item.end}</p>
-          </div>
-        );
-      }) }
+    <div className="experience-container">
+      {data.experience.map(createCard) }
     </div>
   );
 };

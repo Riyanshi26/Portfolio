@@ -66,22 +66,109 @@
 .icons a {
   color: white; /* Inherit color from the icon */
   text-decoration: none; /* Remove underline */
+  transition: all .2s ease-in-out;
 }
 
-/* Additional styling for icons */
-.icons a:hover {
-  color:#A9A9A9;
-}
-
-.project{
-  display: flex;
-}
-
-/* .project img{
-  height: 5rem;
-  width: 5rem;
+/* .icons a:hover {
+  color:#20c7e4;
 } */
+.icons a:hover {
+  transform: scale(1.5);
+  color: white;
+}
+
+/* Projects */
+
+.project,
+.experience {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s ease, filter 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: solid 1px transparent;
+  background-color: #1a191d; /* Background color aligned with the main container */
+}
+
+.project:hover, 
+.education:hover, 
+.experience:hover, 
+.skills:hover {
+  background-color: rgba(255, 255, 255, 0.045); /* Semi-transparent background similar to the main container */
+  backdrop-filter: blur(5px); /* Slight blur effect for glass look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Subtle shadow for depth */
+  border-top: solid 1px rgba(255, 255, 255, 0.1); /* Subtle border line at the top */
+  border-right: solid 1px transparent; /* No visible border for the right side */
+  border-bottom: solid 1px transparent; /* No visible border for the bottom */
+  border-left: solid 1px transparent;
+  overflow: hidden;
+}
+.project:hover .content-header, .experience:hover .expData h5 , .experience:hover .expData h6{
+  color:#81e6d9;
+}
+.project:hover img{
+  border: solid 2px gray;  
+}
+
+
+.projects-container:hover .project:not(:hover), 
+.education-container:hover .education:not(:hover),
+.experience-container:hover .experience:not(:hover),
+.skills-container:hover .skills:not(:hover) {
+  opacity: 0.3;
+}
+
 .project img {
-  height: 2rem;
-  width: 10rem;
+  height: 5rem;
+  width: 27%;
+  margin-right: 1rem;
+  border-radius:0.5rem ;
+}
+.project .content {
+  width: 73%;
+}
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+.content-header h6{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.techStack{
+  align-items: center;
+  border-radius: 3rem;
+  background-color: rgba(45, 212, 191, 0.1);
+  color: #81e6d9;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+}
+/* Education */
+  
+.education{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s ease, filter 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: solid 1px transparent;
+  background-color: #1a191d;
+}
+
+
+/* Experience */
+.expDate{
+  width: 27%;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+.expData{
+  width: 73%;
+}
+
+
+/* skills */
+.skills{
+  margin-bottom : 1rem;
+  transition: opacity 0.3s ease, filter 0.3s ease;
 }

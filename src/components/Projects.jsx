@@ -1,15 +1,15 @@
 import React from 'react';
 import project from "../Data/Projects.json";
-import { Project } from './Cards';
+import { ProjectCard } from './Cards';
 
 const Projects = () => {
   function create_project(project) {
     return (
-      <Project title={project.title} code={project.code} summary={project.summary}/>
+      <ProjectCard data={project}/>
     );
   }
   return (
-    <div>
+    <div className="projects-container">
       {project.projects.map(create_project)}
       
     </div>

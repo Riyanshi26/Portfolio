@@ -1,0 +1,35 @@
+{
+    "skills": [
+      {
+        "title": "Programming Languages",
+        "skill": [
+          "Python","JavaScript","C++","C","SQL"
+        ]
+      },
+      {
+        "title": "Web Development",
+        "skill": [
+          "HTML","CSS","React","Node.js","Express.js","jQuery"
+        ]
+      },
+      {
+        "title": "Databases",
+        "skill": [
+          "MongoDB","MySQL"
+        ]
+      },
+      {
+        "title": "Tools and Technologies",
+        "skill": [
+          "Git","Linux","Shell Scripting","Latex"
+        ]
+      },
+      {
+        "title": "Concepts and Methodologies",
+        "skill": [
+          "Data Structures and Algorithms","Full-Stack Development","Natural Language Processing","Machine Learning"
+        ]
+      }
+    ]
+  }
+  

@@ -1,17 +1,15 @@
 import React from 'react';
-
+import data from "../Data/Skills.json";
+import {SkillsCard} from './Cards';
 const Skills = () => {
+  function createCard(item) {
+    return (
+      <SkillsCard data={item}/>
+    );
+  }
   return (
-    <div>
-      <h2>Right Section</h2>
-      <div>
-      <p>This section is scrollable.</p>
-      {/* Add more content to enable scrolling */}
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      {/* Repeat the above line multiple times to test scrolling */}
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      
-    </div>
+    <div className="skills-container">
+      {data.skills.map(createCard) }
     </div>
   );
 };

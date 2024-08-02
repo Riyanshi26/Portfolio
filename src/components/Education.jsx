@@ -1,18 +1,16 @@
 import React from 'react';
 import data from "../Data/Education.json";
+import { EducationCard } from './Cards';
 
 const Education = () => {
+  function createCard(item) {
+    return (
+      <EducationCard data={item}/>
+    );
+  }
   return (
-    <div>
-      {data.education.map((item) => {
-        return (
-          <div className="education">
-            <h3>{item.school}</h3>
-            <h4>{item.location}</h4>
-            <h4>{item.degree}</h4>
-          </div>
-        );
-      } )}
+    <div className="education-container">
+      {data.education.map(createCard)}
     </div>
   );
 };

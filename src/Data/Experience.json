@@ -3,15 +3,26 @@
         {
             "company": "TCS",
             "designation": "Research Intern",
-            "place": " TCS Noida, India",
-            "start": "May 2023",
-            "end": "June 2023",
+            "location": " TCS Noida, India",
+            "startDate": "May 2023",
+            "endDate": "June 2023",
             "description": [
-            "Conducted in-depth analysis of large language models, specifically ChatGPT, on various mental health datasets sourced from Reddit and proposed different prompting strategies and fine-tuning to increase the accuracy of automated mental health analysis tasks by 20%.",
-            "Applied natural language processing techniques like topic modeling using LDA and K-means clustering, to enhance the performance and accuracy of the system."
-            ]
+            "Conducted in-depth analysis of large language models, specifically ChatGPT, on various mental health datasets sourced from Reddit and proposed different prompting strategies and fine-tuning to increase the accuracy of automated mental health analysis tasks by 20%."            ],
+            "techStack":["Python", "HuggingFace", "NLTK","Pandas", "NumPy", "Matplotlib", "Seaborn","ChatGPT API"]
+
+        },
+        {
+            "company": "TCS",
+            "designation": "Research Intern",
+            "location": " TCS Noida, India",
+            "startDate": "May 2023",
+            "endDate": "June 2023",
+            "description": [
+            "Conducted in-depth analysis of large language models, specifically ChatGPT, on various mental health datasets sourced from Reddit and proposed different prompting strategies and fine-tuning to increase the accuracy of automated mental health analysis tasks by 20%."            ],
+            "techStack":["Python", "HuggingFace", "NLTK","Pandas", "NumPy", "Matplotlib", "Seaborn","ChatGPT API"]
 
         }
+    
     ]
     
   }
