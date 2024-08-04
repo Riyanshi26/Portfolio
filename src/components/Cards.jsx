@@ -7,14 +7,14 @@ import Projects from './Projects';
 function ProjectCard(props){
     return (
         <div className="project">
-            <img src={process.env.PUBLIC_URL + '/images/juice.jpeg'} alt="My Image" />
+            <img src={process.env.PUBLIC_URL + `${props.data.img}` } alt="My Image" />
             <div className='content'>
                 <div className='content-header'>
                     <h6>{props.data.title}</h6>
                     <div style={{display:"flex",gap:"1rem"}}><FiGithub/> <FiExternalLink/></div>
                 </div>
                 <p>{props.data.summary}</p>
-                <div style={{display:"flex", gap:"0.3rem"}}>{
+                <div className='techDiv'>{
                     props.data.techStack.map((item,index) => 
                         <div className='techStack'>{item}</div>        
                     )}
@@ -32,12 +32,14 @@ function EducationCard(props){
     return (
         <div className="education">
             <div style={{display:"flex", justifyContent:"space-between"}}>
-                <h5>{props.data.school}</h5>
-                {props.data.startDate? <h5>{props.data.startDate} - {props.data.endDate}</h5>: <h5>{props.data.endDate}</h5>}
+                <h4>{props.data.school}</h4>
+                {props.data.startDate? <h6>{props.data.startDate} - {props.data.endDate}</h6>: <h6>{props.data.endDate}</h6>}
             </div>
-            <FaLocationDot /> {props.data.location}
-            <h4>{props.data.degree}</h4>
-            {isPercent? "Percentage": "CGPA"}: {props.data.grade}
+            <div style={{display:"flex", justifyContent:"space-between"}}>
+                <h5>{props.data.degree}</h5>
+                <div><h6><FaLocationDot size={14}/>{props.data.location}</h6></div>
+            </div>
+            <p>{isPercent? "Percentage": "CGPA"}: {props.data.grade}</p>
         </div>
     );
 }
@@ -46,7 +48,7 @@ function ExperienceCard(props){
     return (
         <div className="experience">
             <div className='expDate'>
-                {props.data.startDate? <>{props.data.startDate} - {props.data.endDate} </>: <>{props.data.endDate}</>}
+                <p>{props.data.startDate? <>{props.data.startDate} - {props.data.endDate} </>: <>{props.data.endDate}</>}</p>
             </div>
             <div className='expData'>
                 <div> 
@@ -57,7 +59,7 @@ function ExperienceCard(props){
                     </div>
                 </div>
                 {props.data.description.map((item, index) => <p>{item}</p>)}
-                <div style={{display:"flex", gap:"0.3rem"}}>{
+                <div className='techDiv'>{
                     props.data.techStack.map((item,index) => 
                         <div className='techStack'>{item}</div>        
                     )}

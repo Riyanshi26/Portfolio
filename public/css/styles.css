@@ -101,13 +101,13 @@
   border-right: solid 1px transparent; /* No visible border for the right side */
   border-bottom: solid 1px transparent; /* No visible border for the bottom */
   border-left: solid 1px transparent;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-.project:hover .content-header, .experience:hover .expData h5 , .experience:hover .expData h6{
+.project:hover .content-header, .experience:hover .expData h5 , .experience:hover .expData h6, .education:hover h4{
   color:#81e6d9;
 }
 .project:hover img{
-  border: solid 2px gray;  
+  border: solid 2px grey;  
 }
 
 
@@ -127,6 +127,9 @@
 .project .content {
   width: 73%;
 }
+.project p, .experience p ,.education p, .education h6{
+  color:#e0e6ef;
+}
 .content-header {
   display: flex;
   justify-content: space-between;
@@ -135,6 +138,11 @@
 .content-header h6{
   font-size: 1.1rem;
   font-weight: 600;
+}
+.techDiv{
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .techStack{
   align-items: center;
