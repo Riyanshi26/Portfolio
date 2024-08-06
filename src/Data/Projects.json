@@ -21,7 +21,7 @@
             "code": "https://github.com/Riyanshi26/Tic-tac-toe-game",
             "startDate": "Nov 2023",
             "endDate": "Dec 2024",
-            "img":"/images/tic.png",
+            "img":"/images/tic.PNG",
             "summary": "Tic Tac Toe game with adaptive gameplay using reinforcement learning algorithms.",
             "description":[
                 "Implemented a Tic Tac Toe game with using Q-learning and MCTS algorithms for adaptive gameplay.",
@@ -48,7 +48,7 @@
             "code": "https://github.com/Riyanshi26/Diabetic-retinopathy-detection",
             "startDate": "Nov 2023",
             "endDate": "Dec 2024",
-            "img":"/images/juice.jpeg",
+            "img":"/images/diabetic.PNG",
             "summary": "machine learning model using CNNs to automate the detection and grading of diabetic retinopathy from retinal images.",
             "description":[
                 "Implemented a Machine Learning algorithm to automate the detection and grading of diabetic retinopathy and diabetic macular edema using retinal fundus images.",

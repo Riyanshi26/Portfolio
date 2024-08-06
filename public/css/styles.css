@@ -25,6 +25,14 @@
   background-color: #1a191d;
   overflow-y: auto;
 }
+.left-heading a{
+  color: #e0e6ef;
+  text-decoration: none;
+}
+.left-heading a:hover{
+  color: #20c7e4;
+  text-decoration: none;
+}
 
 .indicator-container{
   display: flex;
@@ -71,6 +79,10 @@
 .icons a:hover {
   transform: scale(1.5);
   color: inherit;
+}
+
+.projects-container, .education-container, .experience-container, .skills-container {
+  margin : 1rem 0;
 }
 
 /* Projects */

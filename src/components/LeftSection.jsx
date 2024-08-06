@@ -1,15 +1,16 @@
 import React from 'react';
-import {Link } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { FiExternalLink } from "react-icons/fi";
 
 const LeftSection = ({ sections, activeSection, hoveredIndex, setHoveredIndex }) => {
   return (
     <>
     <div className='left-heading'>
       <h1>Riyanshi Goyal</h1>
-      <h5>Software Engineer, full-Stack Developer</h5>
+      <h4>Software Engineer, Full-Stack Developer</h4>
+      <h5><a href={process.env.PUBLIC_URL +`/RiyanshiGoyal_resume.pdf`}>View full resume  <FiExternalLink/> </a></h5>
     </div>
 
     <div className="indicator-container">

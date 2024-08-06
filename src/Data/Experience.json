@@ -1,14 +1,16 @@
 {
     "experience":[
         {
-            "company": "TCS",
-            "designation": "Research Intern",
-            "location": " TCS Noida, India",
-            "startDate": "May 2023",
-            "endDate": "June 2023",
+            "company": "MAQ Software",
+            "designation": "Software Engineer 1",
+            "location": " Noida, Uttar Pradesh",
+            "startDate": "July 2024",
+            "endDate": "Present",
             "description": [
-            "Conducted in-depth analysis of large language models, specifically ChatGPT, on various mental health datasets sourced from Reddit and proposed different prompting strategies and fine-tuning to increase the accuracy of automated mental health analysis tasks by 20%."            ],
-            "techStack":["Python", "HuggingFace", "NLTK","Pandas", "NumPy", "Matplotlib", "Seaborn","ChatGPT API"]
+                "Constructed Azure Synapse Pipelines to facilitate the seamless transfer of data from on-premises data systems to Azure Data Lake Storage.",
+                "Worked on PySpark Notebooks, Microsoft Fabric Created insightful data visualization reports with Power BI."
+            ],
+            "techStack":["Azure", "PySpark", "Power BI", "Microsoft Fabric","Databricks", "Reactjs"]
 
         },
         {
