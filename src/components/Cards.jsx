@@ -2,7 +2,10 @@ import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
-import Projects from './Projects';
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { FaReact } from "react-icons/fa";
+import { FaRegFileCode } from "react-icons/fa";
+
 
 function ProjectCard(props){
     return (
@@ -11,7 +14,10 @@ function ProjectCard(props){
             <div className='content'>
                 <div className='content-header'>
                     <h6>{props.data.title}</h6>
-                    <div style={{display:"flex",gap:"1rem"}}><FiGithub/> <FiExternalLink/></div>
+                    <div style={{display:"flex",gap:"1rem"}}>
+                        <a href={props.data.code}> <FiGithub/> </a>
+                        { props.data.link ? <a href={props.data.link}><FiExternalLink/></a> : null } 
+                    </div>
                 </div>
                 <p>{props.data.summary}</p>
                 <div className='techDiv'>{
@@ -30,7 +36,7 @@ function ProjectCard(props){
 function EducationCard(props){
     const isPercent= props.data.grade.includes("%");
     return (
-        <div className="education">
+        <div className="education" style={{marginBottom:'1rem'}}>
             <div style={{display:"flex", justifyContent:"space-between"}}>
                 <h4>{props.data.school}</h4>
                 {props.data.startDate? <h6>{props.data.startDate} - {props.data.endDate}</h6>: <h6>{props.data.endDate}</h6>}
@@ -70,11 +76,41 @@ function ExperienceCard(props){
 }
 
 function SkillsCard(props){
+    
+      const afterStyle = {
+        content: '""',
+        position: 'absolute',
+        bottom: '10.5%',
+        zIndex: -1,
+        height: '0.25em',
+        width: '102%',
+        left: '-1%',
+        backgroundColor: props.data.UnderlineColor,
+        transition: 'all 0.1s ease-in-out'
+      };
     return (
         <div className="skills">
-            <h4>{props.data.title}</h4>
-            <div className="skills">
-                {props.data.skill.map((item, index) =><> {item}, </>)}
+            <div style={{display:"flex", gap:"1rem"}}>
+                {(() => {
+                switch (props.data.id) {
+                    case 1:
+                        return <FaRegFileCode size={32}/>;
+                    case 2:
+                        return <FaReact size={32}/>;
+                    case 3:
+                        return <HiOutlineDesktopComputer size={32} />;
+                }
+                })()}
+                <h3>{props.data.title} <span style={afterStyle} /></h3>
+            </div>
+            <div className="skill">
+                <div style={{ color: 'grey' }}>{`<h5>`}</div>
+                {props.data.skill.map((item) =>
+                    <ul> 
+                        <li> {item.map((skill) => <> {skill},</> )} </li>
+                    </ul>
+                )}
+                <div style={{ color: 'grey' }}>{`<h5>`}</div>
             </div>
         </div>
     );

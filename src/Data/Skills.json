@@ -1,34 +1,29 @@
 {
     "skills": [
       {
-        "title": "Programming Languages",
+        "id":1,
+        "title": "Languages & Technologies",
         "skill": [
-          "Python","JavaScript","C++","C","SQL"
-        ]
+          ["Python","JavaScript","C++","C","SQL"],
+          ["Git","Linux","Shell Scripting","Latex"]
+        ],
+        "UnderlineColor":"#df058d"
       },
       {
-        "title": "Web Development",
+        "id":2,
+        "title": "Development",
         "skill": [
-          "HTML","CSS","React","Node.js","Express.js","jQuery"
-        ]
-      },
+          ["HTML","CSS","React","Node.js","Express.js","jQuery","MongoDB","MySQL"]
+        ],
+        "UnderlineColor":"#3a55da"
+      }, 
       {
-        "title": "Databases",
+        "id":3,
+        "title": "Concepts & Methodologies",
         "skill": [
-          "MongoDB","MySQL"
-        ]
-      },
-      {
-        "title": "Tools and Technologies",
-        "skill": [
-          "Git","Linux","Shell Scripting","Latex"
-        ]
-      },
-      {
-        "title": "Concepts and Methodologies",
-        "skill": [
-          "Data Structures and Algorithms","Full-Stack Development","Natural Language Processing","Machine Learning"
-        ]
+          ["Data Structures and Algorithms","Full-Stack Development","Natural Language Processing","Machine Learning"]
+        ],
+        "UnderlineColor":"#f7682a"
       }
     ]
   }

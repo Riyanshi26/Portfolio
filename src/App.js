@@ -5,7 +5,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 
-const sections = ['Education', 'Skills', 'Experience', 'Projects'];
+const sections = [ 'Skills','Education', 'Experience', 'Projects'];
 
 const sectionComponents = {
   Skills: Skills,
