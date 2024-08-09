@@ -59,7 +59,7 @@ function ExperienceCard(props){
             <div className='expData'>
                 <div> 
                     <h5>{props.data.designation}</h5>
-                    <div style={{display:"flex", justifyContent:"space-between"}}>
+                    <div  className='headings'>
                         <h6>{props.data.company}</h6> 
                         <div> <p><FaLocationDot size={14}/>{props.data.location}</p></div>
                     </div>
